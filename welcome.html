@@ -1,5 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Welcome</title></head>
-<body><h1>Welcome</h1></body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon Keyword Tool — you're set</title>
+
+<style>
+  :root {
+    color-scheme: light dark;
+
+    --bg: #d6e8e4;
+    --text: #0f1e1c;
+    --muted: #3e5551;
+    --lift: 0 1px 2px rgba(15, 30, 28, .07), 0 10px 28px rgba(15, 30, 28, .10);
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161c25;
+      --text: #e4e9f0;
+      --muted: #8592a6;
+      --lift: 0 1px 2px rgba(0, 0, 0, .40), 0 10px 28px rgba(0, 0, 0, .45);
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg);
+    min-height: 100vh;
+    color: var(--text);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    padding: 72px 24px;
+    text-align: center;
+  }
+
+  main { max-width: 675px; margin: 0 auto; }
+
+  h1 { font-size: 40px; line-height: 1.25; font-weight: 700; margin: 0 auto; }
+
+  .steps { list-style: none; padding: 0; margin-top: 40px; }
+  .steps li + li { margin-top: 48px; }
+  .cap { font-size: 20px; line-height: 1.625; font-weight: 500; color: var(--muted); margin-bottom: 48px; }
+
+  .shot { display: block; width: 100%; height: auto; border-radius: 11px; box-shadow: var(--lift); }
+</style>
+</head>
+
+<body>
+<main>
+  <h1>🔍 Amazon Keyword Tool is installed</h1>
+
+  <ol class="steps">
+    <li>
+      <p class="cap">Pin <b>Amazon Keyword Tool</b> so it's always one click away:</p>
+      <img class="shot" src="img/step-1.png" width="1350" height="844" alt="Chrome toolbar: click the extensions puzzle icon, then click the pin next to Amazon Keyword Tool.">
+    </li>
+    <li>
+      <p class="cap">Then click the pinned icon — it opens in a new tab:</p>
+      <img class="shot" src="img/step-2.png" width="1350" height="844" alt="Chrome toolbar with Amazon Keyword Tool pinned: click its icon to open the tool.">
+    </li>
+  </ol>
+</main>
+</body>
 </html>
