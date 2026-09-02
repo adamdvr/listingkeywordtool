@@ -1,5 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Privacy Policy</title></head>
-<body><h1>Privacy Policy</h1></body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Amazon Keyword Tool</title>
+<meta name="description" content="Privacy policy for the Amazon Keyword Tool browser extension: what leaves your computer, what is stored, and for how long.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f4f6f8;
+    --surface: #ffffff;
+    --bg-raised: #e9eef4;
+    --line: #e1e6ed;
+    --text: #111820;
+    --muted: #5f6d80;
+    --accent: #0c8177;
+    --flag-bg: #fff4d6;
+    --flag-fg: #7a5200;
+    --flag-line: #e3c980;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1319;
+      --surface: #161c25;
+      --bg-raised: #1b2330;
+      --line: #28313e;
+      --text: #e4e9f0;
+      --muted: #8592a6;
+      --accent: #17bdae;
+      --flag-bg: #33280d;
+      --flag-fg: #ffd98a;
+      --flag-line: #6b551d;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .5rem; letter-spacing: -.01em; }
+  h2 {
+    font-size: 1.15rem; margin: 2.75rem 0 .75rem; letter-spacing: -.005em;
+    padding-top: 1.5rem; border-top: 1px solid var(--line);
+  }
+  h3 { font-size: 1rem; margin: 1.75rem 0 .5rem; }
+  p, li { margin: 0 0 .85rem; }
+  ul { padding-left: 1.25rem; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+
+  .meta {
+    margin: 0 0 2.5rem; padding: 1rem 1.15rem;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+    font-size: .92rem; color: var(--muted);
+  }
+  .meta div { margin: .2rem 0; }
+  .meta strong { color: var(--text); }
+
+  .lede {
+    background: var(--surface); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px; padding: 1.15rem 1.25rem; margin: 0 0 1rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+
+  code {
+    font: .875em/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--bg-raised); padding: .1em .35em; border-radius: 4px;
+    overflow-wrap: anywhere;
+  }
+  pre {
+    background: var(--bg-raised); border: 1px solid var(--line); border-radius: 8px;
+    padding: .8rem 1rem; overflow-x: auto; margin: 0 0 1rem;
+  }
+  pre code { background: none; padding: 0; }
+
+  .tablewrap { overflow-x: auto; margin: 0 0 1.25rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .92rem; }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; background: var(--bg-raised); }
+
+  /* Незаполненный плейсхолдер видно издалека — чтобы страница не уехала на сайт с ним. */
+  .fill {
+    background: var(--flag-bg); color: var(--flag-fg);
+    border: 1px dashed var(--flag-line); border-radius: 4px;
+    padding: .05em .4em; font-weight: 600; white-space: nowrap;
+  }
+
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Amazon Keyword Tool — Privacy Policy</h1>
+
+<div class="meta">
+  <div><strong>Effective date:</strong> 2 September 2026</div>
+  <div><strong>Publisher:</strong> Adam Abdulaev</div>
+  <div><strong>Contact:</strong> support@listingkeywordtool.com</div>
+  <div><strong>Applies to:</strong> the Amazon Keyword Tool browser extension for Google Chrome.</div>
+</div>
+
+<div class="lede">
+  <p>Amazon Keyword Tool takes a search phrase you type, asks Amazon what people search for around it, and counts how many products already compete for each of those keywords.</p>
+  <p>Your search goes to Amazon — that's where the suggestions come from. It goes nowhere else: no account, no server of ours, no third party. Those requests carry the Amazon cookies your browser already holds for that Amazon site, exactly as a normal visit to that site does, and the reason is explained in section 3.4.</p>
+  <p>There is no account and no sign-up. We do not run a server that could receive your data, and we have no analytics, telemetry or crash reporting of any kind. What the extension saves — your keyword table, a cache of Amazon's answers, one interface flag and the id of its own tab — it saves in your own browser's storage on your computer, where it stays under your control. Section 4 says how long each part lives.</p>
+</div>
+
+<h2>1. Who publishes this extension</h2>
+<p>Adam Abdulaev ("we", "us"), publisher of Amazon Keyword Tool in the Chrome Web Store. Questions about this policy: support@listingkeywordtool.com.</p>
+
+<h2>2. What the extension does</h2>
+<p>You open the extension from its toolbar icon; it opens in its own tab. You type one search phrase (the "seed"), pick an Amazon marketplace and a department, and press the button. The extension then asks Amazon's search-suggestion service what shoppers search for around your phrase, and — when you ask it to — loads Amazon search-result pages to read how many products come back for each keyword. The result is a table you can sort, filter and export to CSV.</p>
+<p>That is the extension's entire single purpose. Everything below follows from it.</p>
+
+<h2>3. What leaves your computer, and where it goes</h2>
+<p>The extension makes exactly two kinds of network request, and both go to Amazon.</p>
+
+<h3>3.1 Search suggestions</h3>
+<pre><code>GET https://www.amazon.&lt;marketplace&gt;/suggestions?mid=…&amp;alias=&lt;department&gt;&amp;prefix=&lt;your phrase&gt;[&amp;suffix=…]</code></pre>
+<p>Your phrase is sent as the <code>prefix</code> parameter — and, in the brand variation described below, as the <code>suffix</code> parameter instead. This is the request that produces keywords: the suggestions are Amazon's, so the phrase has to reach Amazon for them to exist.</p>
+<p>The same request is repeated with variations built from your phrase:</p>
+<ul>
+  <li>your phrase on its own;</li>
+  <li>your phrase plus a single letter a–z;</li>
+  <li><strong>a single letter a–z placed before your phrase</strong> — this is how competitors' brand names surface, and here your phrase travels in the <code>suffix</code> parameter;</li>
+  <li>your phrase plus one word from a fixed 33-word English list of shopper modifiers that ships inside the extension (for, with, without, women, men, kids, travel, waterproof and so on) — there is no way to change that list from the interface;</li>
+  <li>phrases Amazon itself returned, sent back as new prefixes to go one level deeper.</li>
+</ul>
+<p>The variations are derived from what you typed and from what Amazon has already returned; nothing else of yours is added to them.</p>
+<p><strong>One press starts many requests, not one.</strong> A full-depth run asks Amazon's suggestion service on the order of a hundred times, and counting loads one search-result page per keyword, a few at a time, over the following minutes. They are ordinary requests made by your browser, paced by the extension; nothing is queued on any server of ours, because there is none.</p>
+
+<h3>3.2 Competing-product counts</h3>
+<pre><code>GET https://www.amazon.&lt;marketplace&gt;/s?k=&lt;keyword&gt;[&amp;i=&lt;department&gt;]</code></pre>
+<p>Only keywords already in your table are sent here: your own seed phrase and the suggestions Amazon itself returned. The response is read as a stream and the connection is dropped as soon as the number is found, so at most about 600 KB of the page is read. The page itself is not stored — only the number and a note of how it was obtained (an exact figure from the page's metadata, or a rounded one read off the page layout).</p>
+
+<h3>3.3 Which hosts, and only which</h3>
+<p>Requests can only go to the ten Amazon domains the extension declares in its manifest:</p>
+<p><code>www.amazon.com</code>, <code>www.amazon.co.uk</code>, <code>www.amazon.de</code>, <code>www.amazon.fr</code>, <code>www.amazon.es</code>, <code>www.amazon.it</code>, <code>www.amazon.ca</code>, <code>www.amazon.com.au</code>, <code>www.amazon.com.br</code>, <code>www.amazon.in</code></p>
+<p>The host is chosen from a fixed table of marketplaces inside the extension; there is no code path that can put any other address into a request. The extension sets no custom headers, sends no request body, and adds nothing of its own to the request beyond the parameters described above.</p>
+
+<h3>3.4 About cookies — stated plainly</h3>
+<p>Both requests are made with credentials included. In practice this means Chrome attaches the cookies you already have for that Amazon domain (session and preference cookies, and, if you are signed in to Amazon, your sign-in cookies). The request therefore reaches Amazon as coming from your browser and, if you are signed in, from your signed-in session.</p>
+<p><strong>Why:</strong> Amazon sits behind a bot-management service. A stream of cookie-less requests gets served a bot-check page instead of results — we measured this, and it is not a rare edge case: a single cookie-less request can succeed, but a run of them does not. Without cookies the extension simply does not work.</p>
+<p><strong>What this does not mean:</strong> the extension does not read, copy, store or forward those cookies. It does not request Chrome's <code>cookies</code> permission, and it does not touch <code>document.cookie</code> anywhere. Attaching them is the browser's doing, they go only to the Amazon domain that owns them, and their values are not visible to the extension's code.</p>
+
+<h3>3.5 What Amazon does with it</h3>
+<p>Once a request reaches Amazon, it is Amazon's to handle under Amazon's own privacy policy and terms. We have no visibility into and no control over that. Amazon is the only third party involved in this extension.</p>
+
+<h3>3.6 Nothing goes anywhere else</h3>
+<p>There is no server on our side that the extension talks to. There is no analytics endpoint, no telemetry, no crash reporter, no advertising or tracking pixel, no external font or CDN, and no third-party SDK anywhere in the extension. Except for those two kinds of request, sent to the ten Amazon domains listed above, the extension makes no outbound request at all — the code contains no other network call of any kind.</p>
+<p>The extension also has no scheduled background activity of its own: the only Chrome permission it holds is <code>storage</code>, so it cannot even register a background alarm. It does nothing while you are not using it.</p>
+
+<h2>4. What is stored on your computer, and for how long</h2>
+<p>The extension saves four kinds of entry in your browser's local extension storage on this device, plus one number in session storage.</p>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>What</th><th>Contains</th><th>How long it lives</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Your current work session</td>
+      <td>Your seed phrase, the chosen marketplace and department, the options you picked, every keyword row collected (keyword, its position in Amazon's suggestions, its parent keyword, depth, source, how many times it was seen, its result count) and the demand / competition / opportunity figures computed from them, plus run status</td>
+      <td><strong>No expiry.</strong> It stays until you clear it or remove the extension, so closing the tab does not lose your work</td>
+    </tr>
+    <tr>
+      <td>Cache of Amazon suggestions</td>
+      <td>Keyed by marketplace, department and the phrase asked about</td>
+      <td>Reused for at most 24 hours; the entry itself is deleted when a later run sweeps it</td>
+    </tr>
+    <tr>
+      <td>Cache of competing-product counts</td>
+      <td>Keyed by marketplace, department and keyword</td>
+      <td>An exact number from page metadata is reused for at most 24 hours; a rounded number read off the page layout, for at most 1 hour. Deletion works the same way</td>
+    </tr>
+    <tr>
+      <td>One interface flag</td>
+      <td>A single true/false value recording that you have already seen a competition number, so the extension stops prompting you about that step</td>
+      <td>No expiry; it is not removed by any housekeeping</td>
+    </tr>
+    <tr>
+      <td>The id of the extension's own tab <em>(session storage)</em></td>
+      <td>A number, so a second click on the icon reuses that tab instead of opening another. Not an address and not a title</td>
+      <td>Gone when the browser restarts</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p><strong>An important distinction about the caches.</strong> The 24-hour and 1-hour figures decide how long a cached answer may still be <em>used</em>. They are not deletion timers: an expired entry stops being reused, but the entry itself is removed only when housekeeping runs — at the start of a later keyword run or counting run. If you never start another run, expired entries stay on disk until you remove the extension.</p>
+<p>Your typed phrase appears in two of these places: as part of the cache key for suggestions, and as the <code>seed</code> field of the saved session.</p>
+<p>If the browser's storage quota is reached, the extension drops expired entries or the older half of the cache, and if that is not enough it drops the whole cache. Housekeeping never touches your saved session or the interface flag.</p>
+<p>Chrome's own account synchronisation is not used. The extension writes nothing to <code>chrome.storage.sync</code> — the one area Chrome would upload to your Google account — so none of the above is synced anywhere. It also does not use <code>localStorage</code>, <code>sessionStorage</code> or IndexedDB.</p>
+
+<h2>5. What the extension does not do</h2>
+<ul>
+  <li>No account, no sign-up, no login, no licence key, no user identifier of any kind. We could not tell one user from another if we tried.</li>
+  <li>No analytics, telemetry, usage statistics, session recording or crash reporting.</li>
+  <li>No advertising, no ad IDs, no fingerprinting.</li>
+  <li>No reading of your cookies, passwords or authentication tokens.</li>
+  <li>No access to your browsing history, or to the addresses or titles of your tabs — the extension holds no <code>tabs</code>, <code>history</code> or <code>webNavigation</code> permission.</li>
+  <li>No content scripts. The extension never runs on the pages you browse; it lives on its own page and cannot see or alter other tabs' content.</li>
+  <li>No geolocation. The "marketplace" you choose is a picker of which Amazon store to query, not your location.</li>
+  <li>No remote code: nothing is fetched and executed, and the code contains no <code>eval</code>, no dynamically constructed functions and no decoded addresses.</li>
+  <li>No selling, renting, sharing or trading of your data. We never receive it in the first place, so there is nothing on our side to sell — this is a statement about how the product is built, not only a promise.</li>
+</ul>
+
+<h2>6. CSV export</h2>
+<p>The export is assembled in the page and handed to Chrome, which saves it to your downloads folder like any other download. Nothing is uploaded, and the extension does not hold Chrome's <code>downloads</code> permission. The suggested file name is derived from your search phrase, so your phrase will appear in the name of the saved file.</p>
+<p>The file contains your keyword table in thirteen columns: keyword, position, depth, hits, parent, source, result count, broadened flag, demand, competition score, opportunity, and two honesty notes about how well the numbers cross-checked and whether any of them are rounded.</p>
+<p>One safety detail: cells beginning with <code>=</code>, <code>+</code>, <code>-</code>, <code>@</code>, tab or carriage return are prefixed with an apostrophe — the standard mitigation against spreadsheet formula injection.</p>
+
+<h2>7. Permissions, and why each one exists</h2>
+<ul>
+  <li><strong><code>storage</code></strong> — to keep your session and the cache described in section 4 on your own device. It is the extension's only Chrome API permission.</li>
+  <li><strong>Host access to ten Amazon domains</strong> — to request suggestions and result counts from the marketplace you selected. Nothing broader is requested: no wildcard host access, no optional permissions, no externally connectable pages, no web-accessible resources.</li>
+</ul>
+
+<h2>8. Chrome Web Store data disclosure</h2>
+<p>Answering the Chrome Web Store's data-use categories, in the store's own words:</p>
+<ul>
+  <li><strong>Personally identifiable information</strong> — Not collected. The extension has exactly one text field, for a search phrase. There is no field for a name, e-mail, address or identifier. Please note the field is free-form: if you type personal information into it, that text will be sent to Amazon as a search and saved in your browser like any other phrase. Please don't.</li>
+  <li><strong>Health information</strong> — Not collected.</li>
+  <li><strong>Financial and payment information</strong> — Not collected.</li>
+  <li><strong>Authentication information</strong> — Not collected. See section 3.4 on cookies.</li>
+  <li><strong>Personal communications</strong> — Not collected.</li>
+  <li><strong>Location</strong> — Not collected.</li>
+  <li><strong>Web history</strong> — Not collected.</li>
+  <li><strong>User activity</strong> — Not collected. Your clicks and keystrokes are not recorded. The single remembered fact about your use is the true/false flag in section 4, and it does not leave your device.</li>
+  <li><strong>Website content</strong> — <strong>Yes.</strong> Your search phrase and the phrases derived from it are sent to Amazon as search queries, and Amazon's answers — suggested keywords and result counts — are read and saved on your device. Nothing of this reaches us or any party other than the Amazon marketplace you selected.</li>
+</ul>
+
+<h2>9. Chrome Web Store Limited Use compliance</h2>
+<p>Our use of data obtained through the extension complies with the Chrome Web Store User Data Policy, including the Limited Use requirements:</p>
+<ul>
+  <li>Data is used only to deliver the single purpose stated in section 2 — finding Amazon keywords for a phrase you enter and counting the products competing for them.</li>
+  <li>Data is not transferred to any third party other than the Amazon marketplace you selected — which is the operation you asked for and the source of the results.</li>
+  <li>Data is not sold, and is not used for advertising, ad targeting, credit assessment or lending.</li>
+  <li>No human reads your data: the extension sends us nothing, so there is nothing on our side to read. Our website — the one hosting this page — is a separate thing from the extension: it receives nothing from it, though, like any website, it keeps ordinary server access logs for the visitors who read this page.</li>
+</ul>
+
+<h2>10. Legal basis for processing (EEA and UK)</h2>
+<p>We do not receive your data, so for most of this policy there is no processing by us to assign a legal basis to. Where the extension acts on your device — sending the phrase you typed to the Amazon marketplace you selected, and saving the results locally — it does so to perform the task you asked it to perform (Article 6(1)(b) GDPR: performance of a contract, or steps taken at your request).</p>
+<p>We do not rely on legitimate interests for advertising, profiling, audience measurement or analytics, because the extension does none of those things.</p>
+
+<h2>11. International transfers</h2>
+<p>The Amazon marketplace you pick decides where the request goes. Choosing amazon.com sends your search to Amazon's US storefront; choosing amazon.de sends it to Amazon's German one. If that means your phrase leaves your country, it is because you selected that storefront — the transfer is the operation you asked for, and the extension offers no other destination.</p>
+<p>What Amazon does with the request once it arrives is governed by Amazon's own privacy policy, not this one. We transfer nothing ourselves, because we receive nothing.</p>
+
+<h2>12. Security</h2>
+<p>Everything the extension stores stays in your browser's own extension storage on your device, protected by your operating system, your browser profile and whatever disk encryption you use. We keep no copy, run no server that receives it and hold no backups, so there is no database of ours that could be breached. Requests to Amazon are made over HTTPS.</p>
+<p>No safeguard is absolute. We cannot protect data on a device that is compromised, and we have no control over the security of your Amazon account.</p>
+
+<h2>13. Your rights, and how to erase everything</h2>
+<p>Because we hold no copy of anything, a request to us to access, correct, export or delete your data would have nothing to act on. Control sits with you, on your device:</p>
+<ul>
+  <li><strong>Clear your work session:</strong> the small "×" inside the search field. It stops any run in progress and deletes the saved session. Note that the cache is deliberately left in place, so returning to the same phrase is fast — and cached entries keep your phrase in their keys until a later run sweeps them (see section 4).</li>
+  <li><strong>Refresh counts:</strong> the Recount action deletes the cached competing-product counts for the rows in view and asks Amazon again.</li>
+  <li><strong>Erase everything at once:</strong> remove the extension from Chrome (<code>chrome://extensions</code> → Remove). Chrome deletes an extension's storage with it. There is deliberately no in-product "wipe everything" button; uninstalling is the complete erase.</li>
+</ul>
+<p>If you are in the EEA, the UK, California or a comparable jurisdiction and want to exercise a statutory right anyway, write to support@listingkeywordtool.com and we will answer — the answer will normally be that we hold nothing about you.</p>
+<p>Whatever Amazon has recorded about requests made from your browser is subject to Amazon's own policy and is requested from Amazon, not from us.</p>
+
+<h2>14. Children</h2>
+<p>The extension is a tool for people selling on Amazon, and is not directed at children. We receive no data about anyone, of any age — see section 8 for what the extension itself reads and stores on your own device.</p>
+
+<h2>15. Changes to this policy</h2>
+<p>If the extension's data behaviour changes, this page changes with it, and the effective date at the top is updated. Material changes will also be reflected in the Chrome Web Store listing's privacy disclosures, since those must match the shipped build.</p>
+
+<h2>16. Contact</h2>
+<p>
+  Adam Abdulaev<br>
+  support@listingkeywordtool.com
+</p>
+
+<footer>
+  Amazon Keyword Tool is an independent tool and is not affiliated with, endorsed by, or sponsored by Amazon. Amazon and all related marks are trademarks of Amazon.com, Inc. or its affiliates.
+</footer>
+
+</div>
+</body>
 </html>
